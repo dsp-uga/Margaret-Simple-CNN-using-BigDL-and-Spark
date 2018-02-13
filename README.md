@@ -1,5 +1,12 @@
 # Project Title
 
+## Descriptions of Files here - 
+
+NW_architecture.png (basic png architecture of a simple network which can easily give around 97% acc)
+X_test1,X_train1,y_train1 are numpy arrays containing the 32x32 image files (we can directly use them for now and then later on just add a preprocess files)
+Modular Preprocess reads from the X_train hash file and the Y_train has files provided
+Modular Preprocess_test reads from the X_test hash file provided and creates the images
+You can resize them directly in the script or resize them somewhere else to desired size. 
 One Paragraph of project description goes here
 
 ## Getting Started
