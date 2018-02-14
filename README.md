@@ -12,6 +12,9 @@ One Paragraph of project description goes here
 ## Really great Multi class weighted softmax loss function - 
 https://gist.github.com/wassname/ce364fddfc8a025bfab4348cf5de852d
 
+## Nice guide to installing Maven 3.5.x
+https://www.vultr.com/docs/how-to-install-apache-maven-on-ubuntu-16-04
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
