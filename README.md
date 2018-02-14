@@ -1,60 +1,53 @@
-# Project Title
+# Malware Classification
 
-One Paragraph of project description goes here
+For this project, we are using the data from the Microsoft Malware Classification Challenge,
+which consists of nearly half a terabyte of uncompressed data. There are no fewer
+than 9 classes of malware, but unlike the documents from P1, each instance of malware
+has one, and only one, of the following family categories:
+
+1. Ramnit
+2. Lollipop
+3. Kelihos_ver3
+4. Vundo
+5. Simda
+6. Tracur
+7. Kelihos_ver1
+8. Obfuscator.ACY
+9. Gatak
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+All the documents are in hexadecimal format, in their own files (one file per document); these files are located here:
+https://storage.googleapis.com/uga-dsp/project2/data/bytes/
+
 
 ### Prerequisites
 
 What things you need to install the software and how to install them
 
 ```
-Give examples
+BigDL
+Python
+Spark
+JAVA
+sbt
 ```
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
 ```
-Give the example
+Pip install pysaprk
+pip install BigDL
+pip insyall default-java
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+The deployment 
 
 ## Built With
 
