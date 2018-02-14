@@ -9,6 +9,9 @@ Modular Preprocess_test reads from the X_test hash file provided and creates the
 You can resize them directly in the script or resize them somewhere else to desired size. 
 One Paragraph of project description goes here
 
+## Really great Multi class weighted softmax loss function - 
+https://gist.github.com/wassname/ce364fddfc8a025bfab4348cf5de852d
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
