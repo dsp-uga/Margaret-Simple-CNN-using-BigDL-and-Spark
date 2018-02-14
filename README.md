@@ -15,9 +15,43 @@ https://gist.github.com/wassname/ce364fddfc8a025bfab4348cf5de852d
 ## Nice guide to installing Maven 3.5.x
 https://www.vultr.com/docs/how-to-install-apache-maven-on-ubuntu-16-04
 
-## Getting Started
+## Problem Definition
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Microsoft Malware Classification Challenge requires us to process a set of text files containing binaries/asm and classify it into one of the 9 types of malwares listed.
+
+## Changing Modalities
+
+Owing to the large dataset size we require a distributed setting to handle it. However an alternative approach would be to change the modalities and represent the problem as a image classification problem.
+Since each malware class has a distinct signature it is intuitive that a convolution network working on the image representation of the problem would give reasonable result.
+In order to convert the bytes file into a image, we encode the Hex-pair into their decimal representation, and represent that as a pixel intensity.
+The advantage of this method is that the convolution network automatically implements a n-gram model using the moving windows. Another and more useful advantage of changing modalities is the size of the files. 
+Even without any rescaling the size of the file reduces by a tenth of its original size. After that we do scaling and downsample the images of size X,16 (where X depends on the number of lines in the bytes file), to 32x32 resolution.
+After this preprocessing step, the total size of the training and testing dataset falls under 30 megabytes. 
+
+## Observations
+
+Size of the images - 
+
+In order to run a convolution neural network we need the images to be of the same size. Since the X in X,16 depending on the number of lines in the malware's byte file is variable, we downsampled the images to various sizes namely 16x16,
+32,32 64,64 128,128 256,256 512,512. We observed that the performance of the neural networks were indifferent to the size of the image. This is intuitive since even at the highest resolution of 512x512 we are downsampling images of maybe a few thousands of lines into a meagre 512 rows. As such we decided to stick to 32x32 images.
+
+Network Depth - 
+
+A network using 3 convolution layers of feature maps 32, 64, 128 respectively followed by a fully convolutional layer of 256 feature maps and (1x1) filter size gives a reasonable performance of 96.7% accuracy on the test set. Blindly stacking layers on top of each other causes overfitting and increase in the training time, without having any noticeable improvement in the results.
+
+Duplicating images before downsampling - 
+
+Another important feature to note is the downsampling strategy. If we directly downsample the image of size (X,16) into any other resolution other than 16x16 or 32x16 and so on, the performance falls by a percentage or so.
+Instead it is beneficial to duplicate the image horizontally and convert the X,16 into X,32 before doing 32x32 downsampling. If we wanted 512x512 we would first duplicate our image to X,512 and then downsample to 512x512.
+
+Optimization functions - 
+
+Through experimentation we determine that Adagrad Optimizer is the best optimizer for the problem at hand.
+
+Weighted Loss function - 
+
+Since the classes are not balanced we use a weighted softmax layer. 
+
 
 ### Prerequisites
 
