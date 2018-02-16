@@ -51,11 +51,11 @@ The deployment
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Google Cloud Platform](https://cloud.google.com/) - Everything You Need To Build And Scale
 
-## Contributing
+## Contributors
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTORS.md](https://github.com/dsp-uga/Margaret/blob/master/CONTRIBUTORS.md) for details on our code of conduct
 
 ## Authors
 
