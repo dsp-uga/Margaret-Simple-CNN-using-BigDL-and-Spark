@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 # This template is to show how to submit python job with dependencies on spark yarn clusters.
-
+ 
 BigDL_HOME=/home/vamsi/softwares/bigdl
 SPARK_HOME=/home/vamsi/softwares/spark-2.2.0-bin-hadoop2.7
 PYTHON_API_PATH=${BigDL_HOME}/lib/bigdl-0.4.0-SNAPSHOT-python-api.zip
