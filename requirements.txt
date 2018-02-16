@@ -1,0 +1,13 @@
+numpy
+scipy
+pandas
+scikit-learn
+matplotlib
+seaborn
+IPython==5.0
+jupyter
+tensorboard
+wordcloud
+opencv-python
+nltk
+#BigDL==0.4.0
