@@ -25,29 +25,40 @@ https://storage.googleapis.com/uga-dsp/project2/data/bytes/
 
 What things you need to install the software and how to install them
 
-```
-BigDL
-Python
-Spark
-JAVA
-sbt
-```
+BigDL  
+Python  
+Spark  
+JAVA  
 
 ### Installing
 
-```
-Pip install pysaprk
-pip install BigDL
-pip insyall default-java
-```
+pip install default-java   
+sudo apt-get install python-dev python-setuptools     
+sudo apt-get install zip gcc    
+sudo easy_install pip    
+Pip install pysaprk    
+pip install BigDL    
+sh instance_startup.sh   
+sh python_package.sh   
 
-## Running the tests
 
-Explain how to run the automated tests for this system
+
 
 ## Deployment
 
-The deployment 
+BigDL is supported only by Python 2.7, 3.5 and 3.6 for now. 
+BigDL can be installed directly from pip when it is to be used in local mode. When deploying it to the cluster mode requires pip installing without pip. A detailed description of the procedures of how to install it with out pip have been provided in the BigDL repo.
+
+Repo Link:  https://github.com/intel-analytics/BigDL/
+
+BigDL Installation without pip: https://github.com/intel-analytics/BigDL/blob/master/docs/docs/PythonUserGuide/install-without-pip.md
+
+A virtual environment will be created with BigDL, Spark, Python along with the dependent packages which can be zipped and added as archives when submitting the task to the cluster. This helps in saving the time for installation as simillar environment and dependent packages should be present in all the workers. Scripts for creating the env and installing all the neccesary packages can found at:
+          https://github.com/intel-analytics/BigDL/tree/master/pyspark/python_package
+         
+These scripts have been customized according to the projects purpose and were available in scripts directory. 
+
+Inorder to deploy, adding all the virtual env to the archives during cluster deployement can done through 'scripts/python_submit_yarn.sh'.
 
 ## Built With
 
