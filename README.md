@@ -24,14 +24,14 @@ https://storage.googleapis.com/uga-dsp/project2/data/bytes/
 ### Prerequisites
 
 What things you need to install the software and how to install them
-
+```
 BigDL  
 Python  
 Spark  
 JAVA  
-
+```
 ### Installing
-
+```
 pip install default-java   
 sudo apt-get install python-dev python-setuptools     
 sudo apt-get install zip gcc    
@@ -40,7 +40,7 @@ Pip install pysaprk
 pip install BigDL    
 sh instance_startup.sh   
 sh python_package.sh   
-
+```
 
 
 
