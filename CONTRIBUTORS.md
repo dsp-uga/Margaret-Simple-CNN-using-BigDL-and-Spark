@@ -1,7 +1,7 @@
 # CONTRIBUTORS 
 
 ### Nihal Soans
-- Created a Distribued Neural Network using BigDL
+- Created the Distributed Neural Network using BigDL
 
 
 ### Raunak Dey
