@@ -78,8 +78,8 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/dsp-uga/Margaret/blob/master/README.md) file for details
 
 ## Acknowledgments
-
-* Hat tip to anyone who's code was used
+* The model was first tested on Mnist Data to check how BigDL works
+* Took the CNN skeleton code from BigDL repo
