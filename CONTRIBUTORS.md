@@ -2,6 +2,7 @@
 
 ### Nihal Soans
 - Created the Distributed Neural Network using BigDL in spark
+- Readme and other Documentation
 
 
 ### Raunak Dey
@@ -10,6 +11,7 @@
 
 ### Vmasi Nadella
 - GCP and Cluster Management
+- Readme
 
 ### Shadow Resources
 - Intel BigDL API Handbook was heavily used
